@@ -140,6 +140,7 @@ page 50201 "Nutrition Order"
             }
         }
     }
+    
     trigger OnOpenPage()
     begin
         PageEditable := Rec.Status = Rec.Status::Open;      //page megnyitásánlá eldől hogy status az open vagy released
@@ -147,6 +148,38 @@ page 50201 "Nutrition Order"
         
     end;
 
+    trigger OnAfterGetRecord()      //total kiszámitása miután a record kész van
+    var
+        tempProtein: Integer;
+        tempFat: Integer;
+        tempCarbohydrates: Integer;
+        tempKJ: Integer;
+        tempKcal: Integer;
+        NutritionLine: Record "Nutrition Line";
+    begin
+        NutritionLine.Reset();
+        NutritionLine.SetRange("No.", Rec."No.");
+        if NutritionLine.FindSet() then begin
+            tempProtein := 0;
+            tempFat := 0;
+            tempCarbohydrates := 0;
+            tempKJ := 0;
+            tempKcal := 0;
+            repeat
+                tempProtein += NutritionLine.Protein;
+                tempFat += NutritionLine.Fat;
+                tempCarbohydrates += NutritionLine.Carbohydrates;
+                tempKJ += NutritionLine.KJ;
+                tempKcal += NutritionLine.Kcal;
+            until NutritionLine.Next() = 0;
+            end;
+        Rec."Total Protein" := tempProtein;
+        Rec."Total Fat" := tempFat;
+        Rec."Total Carbohydrates" := tempCarbohydrates;
+        Rec."Total KJ" := tempKJ;
+        Rec."Total Kcal" := tempKcal;
+    end;
+    
     var
         PageEditable: Boolean;
         NutrionManagement: Codeunit "Nutrion Management";
