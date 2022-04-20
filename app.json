@@ -1,0 +1,25 @@
+{
+	"id": "ee4ee464-c8a2-4359-8aae-1e273115e2fb",
+	"name": "vir2beadando",
+	"publisher": "Default publisher",
+	"version": "1.0.0.0",
+	"brief": "",
+	"description": "",
+	"privacyStatement": "",
+	"EULA": "",
+	"help": "",
+	"url": "",
+	"logo": "",
+	"dependencies": [],
+	"screenshots": [],
+	"platform": "1.0.0.0",
+	"application": "19.0.0.0",
+	"idRanges": [
+		{
+			"from": 50200,
+			"to": 50249
+		}
+	],
+	"showMyCode": true,
+	"runtime": "7.0"
+}
