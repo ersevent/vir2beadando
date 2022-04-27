@@ -13,32 +13,37 @@ codeunit 50200 "Nutrion Management"
         if not Confirm('Szeretnéd lezárni a táplálkozást?') then
             Error('Hiba!');
     end;
-    procedure PostNutrionOrder(var NutrionHeader: Record "Nutrition Header")
+    procedure PostNutrionOrder(var NutritionHeader: Record "Nutrition Header")
     var
-        NutrionLine: Record "Nutrition Line";
-        NutrionPostedHeader: Record "Posted Nutrition Header";
-        NutrionPostedLine: Record "Posted Nutrition Line";
+        NutritionLine: Record "Nutrition Line";
+        NutritionPostedHeader: Record "Posted Nutrition Header";
+        NutritionPostedLine: Record "Posted Nutrition Line";
         PostedNutrOrderSetup : Record "Posted Nutrition Orders Setup";
         NoManagement : Codeunit NoSeriesManagement;
     begin
-        NutrionHeader.TestField(Status, NutrionHeader.Status::Released);
+        NutritionHeader.TestField(Status, NutritionHeader.Status::Released);
 
         if not Confirm('Szeretnéd könyvelni a táplálkozást?') then
             exit;
 
-        NutrionLine.Reset();
-        NutrionLine.SetRange("No.", NutrionHeader."No.");
-        if NutrionLine.FindSet() then
+        NutritionPostedHeader.Init();
+        NutritionPostedHeader.TransferFields(NutritionHeader);
+        PostedNutrOrderSetup.Get();
+        NutritionPostedHeader."No." := NoManagement.GetNextNo(PostedNutrOrderSetup."No. Series",WORKDATE,true);
+        NutritionPostedHeader.Insert(true);
+
+        NutritionLine.Reset();
+        NutritionLine.SetRange("No.", NutritionHeader."No.");
+        if NutritionLine.FindSet() then
             repeat
-                NutrionPostedHeader.Init();
-                NutrionPostedHeader.TransferFields(NutrionHeader);
-                PostedNutrOrderSetup.Get();
-                NutrionPostedHeader."No." := NoManagement.GetNextNo(PostedNutrOrderSetup."No. Series",WORKDATE,true);
-                NutrionPostedHeader.Insert(true);
-            until NutrionLine.Next() = 0;
+                NutritionPostedLine.Init();
+                NutritionPostedLine.TransferFields(NutritionLine);
+                NutritionPostedLine."No." := NutritionPostedHeader."No.";
+                NutritionPostedLine.Insert(true);
+            until NutritionLine.Next() = 0;
         Message('Sikeres könyvelés!');
-        if NutrionHeader."Delete after post" then
-            NutrionHeader.Delete(true);     //törli a rekordot a táblában
-        //Page.RunModal(Page::"Nutrion Order", NutrionPostedHeader);
+        if NutritionHeader."Delete after post" then
+            NutritionHeader.Delete(true);     //törli a rekordot a táblában
+        //Page.RunModal(Page::"Nutrition Order", NutritionPostedHeader);
     end;
 }

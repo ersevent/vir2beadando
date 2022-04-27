@@ -9,6 +9,7 @@ table 50201 "Nutrition Header"
         {
             Caption = 'Szám';
             DataClassification = CustomerContent;
+            Editable = false;
         }
         field(2; "Customer No."; Text[20])
         {
@@ -35,6 +36,7 @@ table 50201 "Nutrition Header"
         {
             Caption = 'Dátum';
             DataClassification = CustomerContent;
+            Editable = false;
         }
         field(5; Status; enum "Sales Document Status")
         {

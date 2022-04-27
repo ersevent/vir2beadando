@@ -11,16 +11,6 @@ page 50200 NutritionOrderSubpage
         {
             repeater(General)
             {
-                field("No."; Rec."No.")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-                field("Line No."; Rec."Line No.")
-                {
-                    ApplicationArea = All;
-                    Visible = false;
-                }
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;
