@@ -63,7 +63,7 @@ table 50205 "Posted Nutrition Line"
     }
     keys
     {
-        key(PK; "No.")
+        key(PK; "No.", "Line No.")
         {
             Clustered = true;
         }

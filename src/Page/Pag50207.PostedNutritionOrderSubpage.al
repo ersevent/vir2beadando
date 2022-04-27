@@ -4,6 +4,7 @@ page 50207 "Posted Nutrition Order Subpage"
     PageType = ListPart;
     SourceTable = "Posted Nutrition Line";
     Editable = false;
+    CardPageId = "Posted Nutrition Order";
     
     layout
     {
@@ -11,14 +12,6 @@ page 50207 "Posted Nutrition Order Subpage"
         {
             repeater(General)
             {
-                field("No."; Rec."No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("Line No."; Rec."Line No.")
-                {
-                    ApplicationArea = All;
-                }
                 field("Code"; Rec."Code")
                 {
                     ApplicationArea = All;

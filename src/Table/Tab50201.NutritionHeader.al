@@ -9,6 +9,7 @@ table 50201 "Nutrition Header"
         {
             Caption = 'Szám';
             DataClassification = CustomerContent;
+            Editable = false;
         }
         field(2; "Customer No."; Text[20])
         {
@@ -19,22 +20,11 @@ table 50201 "Nutrition Header"
             trigger OnValidate()
             var
                 Customer: Record Customer;
-                NutritionLine: Record "Nutrition Line";
-                decProtein: Integer;
             begin
                 if(Customer.get("Customer No.")) then
                     Rec."Customer Name" := Customer.Name
                 else
                     Rec."Customer Name" := '';
-
-                //TODO total számitása
-                if NutritionLine.FindSet() then begin
-                    decProtein := 0;
-                    repeat
-                        decProtein += NutritionLine.Protein;
-                    until NutritionLine.Next() = 0;
-                    Rec."Total Protein" := decProtein;
-                end
             end;
         }
         field(3; "Customer Name"; Text[20])
@@ -46,6 +36,7 @@ table 50201 "Nutrition Header"
         {
             Caption = 'Dátum';
             DataClassification = CustomerContent;
+            Editable = false;
         }
         field(5; Status; enum "Sales Document Status")
         {
@@ -66,26 +57,22 @@ table 50201 "Nutrition Header"
         field(8; "Total Fat"; Integer)
         {
             Caption = 'Összes zsír';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Fat where("No." = field("No.")));
+            DataClassification = CustomerContent;
         }
         field(9; "Total Carbohydrates"; Integer)
         {
             Caption = 'Összes szénhidrát';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Carbohydrates where("No." = field("No.")));
+            DataClassification = CustomerContent;
         }
         field(10; "Total KJ"; Integer)
         {
             Caption = 'Összes KJ';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".KJ where("No." = field("No.")));
+            DataClassification = CustomerContent;
         }
         field(11; "Total Kcal"; Integer)
         {
             Caption = 'Összes kalória';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Kcal where("No." = field("No.")));
+            DataClassification = CustomerContent;
         }
     }
     keys

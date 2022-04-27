@@ -13,7 +13,6 @@ page 50201 "Nutrition Order"
                 field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
-                    Visible = false;
                 }
                 field("Customer No."; Rec."Customer No.")
                 {
@@ -85,8 +84,6 @@ page 50201 "Nutrition Order"
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 trigger OnAction()
-                var
-                    NotImplementedError: Label 'Not Implemented %1';
                 begin
                     //Message(NotImplementedError, UserId());
                     Rec.TestField(Rec."Customer No.");
@@ -103,8 +100,6 @@ page 50201 "Nutrition Order"
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 trigger OnAction()
-                var
-                    NotImplementedError: Label 'Nincs implementálva %1';
                 begin
                     NutrionManagement.ChangeStatus(Rec, Rec.Status::Open);
                 end;
@@ -118,8 +113,6 @@ page 50201 "Nutrition Order"
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 trigger OnAction()
-                var
-                    NotImplementedError: Label 'Nincs implementálva %1';
                 begin
                     NutrionManagement.PostNutrionOrder(Rec);
                 end;
@@ -132,7 +125,6 @@ page 50201 "Nutrition Order"
                 Promoted = true;        //főtáblán is jelenjen meg
                 PromotedOnly = true;
                 PromotedIsBig = true;
-                //TODO csak 1 recordot exportáljon
                 trigger OnAction()
                 begin
                     Xmlport.Run(50200, true, false);
@@ -140,6 +132,7 @@ page 50201 "Nutrition Order"
             }
         }
     }
+    
     trigger OnOpenPage()
     begin
         PageEditable := Rec.Status = Rec.Status::Open;      //page megnyitásánlá eldől hogy status az open vagy released
@@ -147,7 +140,40 @@ page 50201 "Nutrition Order"
         
     end;
 
+    trigger OnAfterGetRecord()      //total kiszámitása miután a record kész van
+    var
+        tempProtein: Integer;
+        tempFat: Integer;
+        tempCarbohydrates: Integer;
+        tempKJ: Integer;
+        tempKcal: Integer;
+        NutritionLine: Record "Nutrition Line";
+    begin
+        NutritionLine.Reset();
+        NutritionLine.SetRange("No.", Rec."No.");
+        if NutritionLine.FindSet() then begin
+            tempProtein := 0;
+            tempFat := 0;
+            tempCarbohydrates := 0;
+            tempKJ := 0;
+            tempKcal := 0;
+            repeat
+                tempProtein += NutritionLine.Protein;
+                tempFat += NutritionLine.Fat;
+                tempCarbohydrates += NutritionLine.Carbohydrates;
+                tempKJ += NutritionLine.KJ;
+                tempKcal += NutritionLine.Kcal;
+            until NutritionLine.Next() = 0;
+            end;
+        Rec."Total Protein" := tempProtein;
+        Rec."Total Fat" := tempFat;
+        Rec."Total Carbohydrates" := tempCarbohydrates;
+        Rec."Total KJ" := tempKJ;
+        Rec."Total Kcal" := tempKcal;
+    end;
+    
     var
         PageEditable: Boolean;
+        NotImplementedError: Label 'Nincs implementálva %1';
         NutrionManagement: Codeunit "Nutrion Management";
 }
