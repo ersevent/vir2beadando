@@ -1,11 +1,11 @@
 codeunit 50200 "Nutrion Management"
 {
-    procedure ChangeStatus(var TestHeader: Record "Nutrition Header";Status: Enum "Sales Document Status")
+    procedure ChangeStatus(var NutritionHeader: Record "Nutrition Header";Status: Enum "Sales Document Status")
     //ha var ott van akkor referencia, ha nincs akkor csak lemásolja az értékeket
     begin
-        TestHeader.TestField(TestHeader."Customer No.");
-        TestHeader.Status := Status;
-        TestHeader.Modify();
+        NutritionHeader.TestField(NutritionHeader."Customer No.");
+        NutritionHeader.Status := Status;
+        NutritionHeader.Modify();
     end;
 
     procedure ConfirmChangeStatus(var Rec: Record "Nutrition Header")
