@@ -52,7 +52,9 @@ table 50201 "Nutrition Header"
         field(7; "Total Protein"; Integer)
         {
             Caption = 'Összes fehérje';
-            DataClassification = CustomerContent;
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".Protein where("No." = field("No.")));
+            Editable = false;  //flowfield mindig editable false
         }
         field(8; "Total Fat"; Integer)
         {

@@ -36,14 +36,7 @@ table 50200 "Nutrition Line"
                         Rec."Unit of measure" := recMacronutrients."Unit of measure";
                         Rec.KJ := recMacronutrients.KJ;
                         Rec.Kcal := recMacronutrients.Kcal;
-                    end
-                else
-                    Rec.Protein := 0;
-                    Rec.Fat := 0;
-                    Rec.Carbohydrates := 0;
-                    Rec."Unit of measure" := '';
-                    Rec.KJ := 0;
-                    Rec.Kcal := 0;
+                    end;
                 Rec.CalcFields(Description);
             end;
         }
@@ -76,7 +69,8 @@ table 50200 "Nutrition Line"
         field(6; Protein; Integer)
         {
             Caption = 'Fehérje';
-            Editable = false; 
+            DataClassification = CustomerContent;
+            Editable = false;
         }
         field(7; Fat; Integer)
         {

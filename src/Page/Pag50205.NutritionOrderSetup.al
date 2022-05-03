@@ -16,16 +16,11 @@ page 50205 "Nutrition Order Setup"
                 {
                     ApplicationArea = All;
                 }
+                field("Posted No. Series"; Rec."Posted No. Series")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
-    trigger OnOpenPage()
-    var
-        no : Code[20];
-    begin
-        if Rec.IsEmpty() then
-            Rec.Insert();
-        No := 'AAA123123';
-        no := IncStr(No);
-    end;
 }

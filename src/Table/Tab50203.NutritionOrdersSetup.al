@@ -16,6 +16,12 @@ table 50203 "Nutrition Orders Setup"
             DataClassification = ToBeClassified;
             TableRelation = "No. Series".Code;
         }
+        field(3; "Posted No. Series"; Code[20])
+        {
+            Caption = 'Könyvelt sorszám';
+            DataClassification = ToBeClassified;
+            TableRelation = "No. Series".Code;
+        }
     }
     keys
     {

@@ -18,7 +18,7 @@ codeunit 50200 "Nutrion Management"
         NutritionLine: Record "Nutrition Line";
         NutritionPostedHeader: Record "Posted Nutrition Header";
         NutritionPostedLine: Record "Posted Nutrition Line";
-        PostedNutrOrderSetup : Record "Posted Nutrition Orders Setup";
+        NutritionOrderSetup : Record "Nutrition Orders Setup";
         NoManagement : Codeunit NoSeriesManagement;
     begin
         NutritionHeader.TestField(Status, NutritionHeader.Status::Released);
@@ -28,8 +28,8 @@ codeunit 50200 "Nutrion Management"
 
         NutritionPostedHeader.Init();
         NutritionPostedHeader.TransferFields(NutritionHeader);
-        PostedNutrOrderSetup.Get();
-        NutritionPostedHeader."No." := NoManagement.GetNextNo(PostedNutrOrderSetup."No. Series",WORKDATE,true);
+        NutritionOrderSetup.Get();
+        NutritionPostedHeader."No." := NoManagement.GetNextNo(NutritionOrderSetup."Posted No. Series",WORKDATE,true);
         NutritionPostedHeader.Insert(true);
 
         NutritionLine.Reset();
