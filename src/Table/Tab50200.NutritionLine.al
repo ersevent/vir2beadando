@@ -38,7 +38,7 @@ table 50200 "Nutrition Line"
                         Rec.Kcal := recMacronutrients.Kcal;
                     end
                 else
-                    Rec."Protein" := 0;
+                    Rec.Protein := 0;
                     Rec.Fat := 0;
                     Rec.Carbohydrates := 0;
                     Rec."Unit of measure" := '';
