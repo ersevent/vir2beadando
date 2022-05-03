@@ -57,13 +57,7 @@ table 50200 "Nutrition Line"
             var
                 recMacronutrients: Record Macronutrients;
             begin
-                if recMacronutrients.Get(Rec."Code") then
-                    Rec.Protein := recMacronutrients.Protein * Quantity;
-                    Rec.Fat := recMacronutrients.Fat * Quantity;
-                    Rec.Carbohydrates := recMacronutrients.Carbohydrates * Quantity;
-                    Rec."Unit of measure" := recMacronutrients."Unit of measure";
-                    Rec.KJ := recMacronutrients.KJ * Quantity;
-                    Rec.Kcal := recMacronutrients.Kcal * Quantity;
+                NutritionManagement.CalcQuantity(Rec, recMacronutrients);
             end;
         }
         field(6; Protein; Integer)
@@ -110,4 +104,7 @@ table 50200 "Nutrition Line"
             Clustered = true;
         }
     }
+
+    var
+        NutritionManagement: Codeunit "Nutrition Management";
 }

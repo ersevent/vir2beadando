@@ -19,6 +19,20 @@ codeunit 50200 "Nutrition Management"
         if not Confirm('Szeretnéd újranyitni a táplálkozást?') then
             Error('Hiba!')
     end;
+
+    internal procedure CalcQuantity(var NutritionLine: Record "Nutrition Line"; recMacronutrients: Record Macronutrients)
+    begin
+        if recMacronutrients.Get(NutritionLine."Code") then
+        begin
+            NutritionLine.Protein := recMacronutrients.Protein * NutritionLine.Quantity;
+            NutritionLine.Fat := recMacronutrients.Fat * NutritionLine.Quantity;
+            NutritionLine.Carbohydrates := recMacronutrients.Carbohydrates * NutritionLine.Quantity;
+            NutritionLine."Unit of measure" := recMacronutrients."Unit of measure";
+            NutritionLine.KJ := recMacronutrients.KJ * NutritionLine.Quantity;
+            NutritionLine.Kcal := recMacronutrients.Kcal * NutritionLine.Quantity;
+            NutritionLine.Modify();
+        end;    
+    end;
     procedure PostNutritionOrder(var NutritionHeader: Record "Nutrition Header")
     var
         NutritionLine: Record "Nutrition Line";
