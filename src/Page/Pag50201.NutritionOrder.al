@@ -36,7 +36,7 @@ page 50201 "Nutrition Order"
                     ApplicationArea = All;
                 }
             }
-            part("Nutrion List"; "NutritionOrderSubpage")
+            part("Nutrition List"; "NutritionOrderSubpage")
             {
                 SubPageLink = "No." = field("No.");
                 ApplicationArea = All;

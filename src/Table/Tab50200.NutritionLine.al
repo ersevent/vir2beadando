@@ -9,7 +9,7 @@ table 50200 "Nutrition Line"
     {
         field(1; "No."; Code[20])
         {
-            Caption = 'Szám';
+            Caption = 'Táplálkozás szám';
             DataClassification = CustomerContent;
             TableRelation = "Nutrition Header"."No.";
         }
@@ -39,6 +39,11 @@ table 50200 "Nutrition Line"
                     end
                 else
                     Rec."Protein" := 0;
+                    Rec.Fat := 0;
+                    Rec.Carbohydrates := 0;
+                    Rec."Unit of measure" := '';
+                    Rec.KJ := 0;
+                    Rec.Kcal := 0;
                 Rec.CalcFields(Description);
             end;
         }
