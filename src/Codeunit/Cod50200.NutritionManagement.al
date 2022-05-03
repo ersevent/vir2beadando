@@ -1,4 +1,4 @@
-codeunit 50200 "Nutrion Management"
+codeunit 50200 "Nutrition Management"
 {
     procedure ChangeStatus(var NutritionHeader: Record "Nutrition Header";Status: Enum "Sales Document Status")
     //ha var ott van akkor referencia, ha nincs akkor csak lemásolja az értékeket

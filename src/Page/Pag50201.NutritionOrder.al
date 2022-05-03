@@ -175,5 +175,5 @@ page 50201 "Nutrition Order"
     var
         PageEditable: Boolean;
         NotImplementedError: Label 'Nincs implementálva %1';
-        NutrionManagement: Codeunit "Nutrion Management";
+        NutrionManagement: Codeunit "Nutrition Management";
 }
