@@ -7,11 +7,11 @@ table 50201 "Nutrition Header"
     {
         field(1; "No."; Code[10])
         {
-            Caption = 'Szám';
+            Caption = 'Táplálkozási szám';
             DataClassification = CustomerContent;
             Editable = false;
         }
-        field(2; "Customer No."; Text[20])
+        field(2; "Customer No."; Code[20])
         {
             Caption = 'Vevő száma';
             DataClassification = CustomerContent;
