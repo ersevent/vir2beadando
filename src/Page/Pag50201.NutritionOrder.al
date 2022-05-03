@@ -86,9 +86,7 @@ page 50201 "Nutrition Order"
                 trigger OnAction()
                 begin
                     //Message(NotImplementedError, UserId());
-                    Rec.TestField(Rec."Customer No.");
-                    Rec.Status := Rec.Status::Released;
-                    Rec.Modify();
+                    NutritionManagement.ChangeStatus(Rec, Rec.Status::Released);
                 end;
             }
             action(Reopen)
@@ -101,7 +99,7 @@ page 50201 "Nutrition Order"
                 PromotedIsBig = true;
                 trigger OnAction()
                 begin
-                    NutrionManagement.ChangeStatus(Rec, Rec.Status::Open);
+                    NutritionManagement.ChangeStatus(Rec, Rec.Status::Open);
                 end;
             }
             action(PostDocument)
@@ -114,7 +112,7 @@ page 50201 "Nutrition Order"
                 PromotedIsBig = true;
                 trigger OnAction()
                 begin
-                    NutrionManagement.PostNutrionOrder(Rec);
+                    NutritionManagement.PostNutritionOrder(Rec);
                 end;
             }
             action(ExportOrders)
@@ -175,5 +173,5 @@ page 50201 "Nutrition Order"
     var
         PageEditable: Boolean;
         NotImplementedError: Label 'Nincs implementálva %1';
-        NutrionManagement: Codeunit "Nutrition Management";
+        NutritionManagement: Codeunit "Nutrition Management";
 }

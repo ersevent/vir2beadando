@@ -13,7 +13,7 @@ codeunit 50200 "Nutrition Management"
         if not Confirm('Szeretnéd lezárni a táplálkozást?') then
             Error('Hiba!');
     end;
-    procedure PostNutrionOrder(var NutritionHeader: Record "Nutrition Header")
+    procedure PostNutritionOrder(var NutritionHeader: Record "Nutrition Header")
     var
         NutritionLine: Record "Nutrition Line";
         NutritionPostedHeader: Record "Posted Nutrition Header";
