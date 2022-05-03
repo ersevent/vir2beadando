@@ -140,7 +140,7 @@ page 50201 "Nutrition Order"
         
     end;
 
-    trigger OnAfterGetRecord()      //total kiszámitása miután a record kész van
+    /* trigger OnAfterGetRecord()      //total kiszámitása miután a record kész van, flowfield helyett
     var
         tempProtein: Integer;
         tempFat: Integer;
@@ -170,7 +170,7 @@ page 50201 "Nutrition Order"
         Rec."Total Carbohydrates" := tempCarbohydrates;
         Rec."Total KJ" := tempKJ;
         Rec."Total Kcal" := tempKcal;
-    end;
+    end; */
     
     var
         PageEditable: Boolean;
