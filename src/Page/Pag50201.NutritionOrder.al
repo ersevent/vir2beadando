@@ -75,7 +75,7 @@ page 50201 "Nutrition Order"
     actions{
         area(Processing)
         {
-            action(ChangeStatus)
+            action(Release)
             {
                 Caption = 'Táplálkozás lezárása';
                 Image = Stages;
