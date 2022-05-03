@@ -1,10 +1,12 @@
 xmlport 50200 "Export Nutrition Order"
 {
     Caption = 'Táplálkozás exportálása';
-    Format = VariableText;
+    Format = Xml;
     Direction = Export;
+/*  
+    Format = VariableText;
     TextEncoding = UTF8;
-    TableSeparator = '<NewLine>';
+    TableSeparator = '<NewLine>'; */
 
     schema
     {
