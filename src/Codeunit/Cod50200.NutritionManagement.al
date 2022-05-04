@@ -10,13 +10,13 @@ codeunit 50200 "Nutrition Management"
 
     procedure ConfirmChangeStatusToOpen(var Rec: Record "Nutrition Header")
     begin
-        if not Confirm('Szeretnéd lezárni a táplálkozást?') then
+        if not Confirm('Szeretnéd újranyitni a táplálkozást?') then
             Error('Hiba!');
     end;
 
     internal procedure ConfirmChangeStatusToRelease(var Rec: Record "Nutrition Header")
     begin
-        if not Confirm('Szeretnéd újranyitni a táplálkozást?') then
+        if not Confirm('Szeretnéd lezárni a táplálkozást?') then
             Error('Hiba!')
     end;
 
