@@ -24,19 +24,23 @@ xmlport 50200 "Export Nutrition Order"
                 fieldelement(Date; NutritionHeader."Date")
                 {
                 }
-                fieldelement(TotalProtein; NutritionHeader."Total Protein")
+            }
+            tableelement(NutritionLine; "Nutrition Line")
+            {
+                RequestFilterFields = "No.", "Line No.";
+                fieldelement(TotalProtein; NutritionLine."Total Protein")
                 {
                 }
-                fieldelement(TotalFat; NutritionHeader."Total Fat")
+                fieldelement(TotalFat; NutritionLine."Total Fat")
                 {
                 }
-                fieldelement(TotalCarbohydrates; NutritionHeader."Total Carbohydrates")
+                fieldelement(TotalCarbohydrates; NutritionLine."Total Carbohydrates")
                 {
                 }
-                fieldelement(TotalKJ; NutritionHeader."Total KJ")
+                fieldelement(TotalKJ; NutritionLine."Total KJ")
                 {
                 }
-                fieldelement(TotalKcal; NutritionHeader."Total Kcal")
+                fieldelement(TotalKcal; NutritionLine."Total Kcal")
                 {
                 }
             }

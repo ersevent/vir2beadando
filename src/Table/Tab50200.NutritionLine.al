@@ -96,6 +96,36 @@ table 50200 "Nutrition Line"
             DataClassification = CustomerContent;
             Editable = false;
         }
+        field(12; "Total Protein"; Integer)
+        {
+            Caption = 'Összes fehérje';
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".Protein where("No." = field("No.")));
+        }
+        field(13; "Total Fat"; Integer)
+        {
+            Caption = 'Összes zsír';
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".Fat where("No." = field("No.")));
+        }
+        field(14; "Total Carbohydrates"; Integer)
+        {
+            Caption = 'Összes szénhidrát';
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".Carbohydrates where("No." = field("No.")));
+        }
+        field(15; "Total KJ"; Integer)
+        {
+            Caption = 'Összes KJ';
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".KJ where("No." = field("No.")));
+        }
+        field(16; "Total Kcal"; Integer)
+        {
+            Caption = 'Összes kalória';
+            FieldClass = FlowField;
+            CalcFormula = sum("Nutrition Line".Kcal where("No." = field("No.")));
+        }
     }
     keys
     {

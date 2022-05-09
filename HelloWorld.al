@@ -6,6 +6,6 @@ pageextension 50200 CustomerListExt extends "Customer List"
 {
     trigger OnOpenPage();
     begin
-        Message('ASD');
+        Message('VIR beadando');
     end;
 }

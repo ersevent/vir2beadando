@@ -22,6 +22,10 @@ page 50200 NutritionOrderSubpage
                 field(Quantity; Rec.Quantity)
                 {
                     ApplicationArea = All;
+                    trigger OnValidate()
+                    begin
+                        CurrPage.Update();
+                    end;
                 }
                 field(Protein; Rec.Protein)
                 {
@@ -46,6 +50,34 @@ page 50200 NutritionOrderSubpage
                 field(Kcal; Rec.Kcal)
                 {
                     ApplicationArea = All;
+                }
+            }
+            group(Total)
+            {
+                field("Total Protein"; Rec."Total Protein")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+                field("Total Fat"; Rec."Total Fat")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+                field("Total Carbohydrates"; Rec."Total Carbohydrates")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+                field("Total KJ"; Rec."Total KJ")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+                field("Total Kcal"; Rec."Total Kcal")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
                 }
             }
         }

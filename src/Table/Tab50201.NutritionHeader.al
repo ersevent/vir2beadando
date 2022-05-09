@@ -48,37 +48,7 @@ table 50201 "Nutrition Header"
         {
             Caption = 'Törlés könyvelés után';
             DataClassification = CustomerContent;
-        }
-        field(7; "Total Protein"; Integer)
-        {
-            Caption = 'Összes fehérje';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Protein where("No." = field("No.")));
-        }
-        field(8; "Total Fat"; Integer)
-        {
-            Caption = 'Összes zsír';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Fat where("No." = field("No.")));
-        }
-        field(9; "Total Carbohydrates"; Integer)
-        {
-            Caption = 'Összes szénhidrát';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Carbohydrates where("No." = field("No.")));
-        }
-        field(10; "Total KJ"; Integer)
-        {
-            Caption = 'Összes KJ';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".KJ where("No." = field("No.")));
-        }
-        field(11; "Total Kcal"; Integer)
-        {
-            Caption = 'Összes kalória';
-            FieldClass = FlowField;
-            CalcFormula = sum("Nutrition Line".Kcal where("No." = field("No.")));
-        }
+        }        
     }
     keys
     {

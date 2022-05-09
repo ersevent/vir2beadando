@@ -41,35 +41,6 @@ page 50201 "Nutrition Order"
                 SubPageLink = "No." = field("No.");
                 ApplicationArea = All;
             }
-
-            group(Total)
-            {
-                field("Total Protein"; Rec."Total Protein")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-                field("Total Fat"; Rec."Total Fat")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-                field("Total Carbohydrates"; Rec."Total Carbohydrates")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-                field("Total KJ"; Rec."Total KJ")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-                field("Total Kcal"; Rec."Total Kcal")
-                {
-                    ApplicationArea = All;
-                    Editable = false;
-                }
-            }
         }
     }
     actions{
@@ -110,6 +81,7 @@ page 50201 "Nutrition Order"
                 Promoted = true;        //főtáblán is jelenjen meg
                 PromotedOnly = true;
                 PromotedIsBig = true;
+                PromotedCategory = Process;
                 trigger OnAction()
                 begin
                     NutritionManagement.PostNutritionOrder(Rec);
@@ -123,6 +95,7 @@ page 50201 "Nutrition Order"
                 Promoted = true;        //főtáblán is jelenjen meg
                 PromotedOnly = true;
                 PromotedIsBig = true;
+                PromotedCategory = Report;
                 trigger OnAction()
                 begin
                     Xmlport.Run(50200, true, false);
