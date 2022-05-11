@@ -1,7 +1,7 @@
 page 50208 "Posted Nutrition Orders"
 {
     ApplicationArea = All;
-    Caption = 'Könyvelt táplálkozások';
+    Caption = 'Posted Nutrition Orders';
     PageType = List;
     SourceTable = "Posted Nutrition Header";
     UsageCategory = History;

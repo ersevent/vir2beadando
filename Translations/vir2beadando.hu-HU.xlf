@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="hu-HU" original="vir2beadando.g.xlf">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 4271160630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Macronutrients</source>
+          <target>Makrotápanyagok</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 837068723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Carbohydrates</source>
+          <target>Szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Kód</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Leírás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 1575806285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fat</source>
+          <target>Zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 2799087047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kcal</source>
+          <target>Kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 2526689939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KJ</source>
+          <target>KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 2979945781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Protein</source>
+          <target>Fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Protein - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4271160630 - Field 1405426649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of measure</source>
+          <target>Mértékegység</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Macronutrients - Field Unit of measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Order</source>
+          <target>Táplálkozás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <target>Vevő neve</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Vevő száma</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target>Dátum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 2355334631 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete after post</source>
+          <target>Törlés könyvelés után</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field Delete after post - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition No.</source>
+          <target>Táplálkozási szám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 146137881 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target>Státusz</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Header - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutritions</source>
+          <target>Táplálkozás összetevők</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 837068723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Carbohydrates</source>
+          <target>Szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Kód</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Leírás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 1575806285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fat</source>
+          <target>Zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2799087047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kcal</source>
+          <target>Kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2526689939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KJ</source>
+          <target>KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Sorszám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition No.</source>
+          <target>Táplálkozás szám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2979945781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Protein</source>
+          <target>Fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Protein - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Mennyiség</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2508615589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Carbohydrates</source>
+          <target>Összes szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Total Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 1074868379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Fat</source>
+          <target>Összes zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Total Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 3317566697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Kcal</source>
+          <target>Összes kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Total Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 2737970965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total KJ</source>
+          <target>Összes KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Total KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 3014316771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Protein</source>
+          <target>Összes fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Total Protein - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 947277746 - Field 1405426649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of measure</source>
+          <target>Mértékegység</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Line - Field Unit of measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 164151854 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Orders Setup</source>
+          <target>Táplálkozások beállítás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Orders Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 164151854 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <target>Sorszám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Orders Setup - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 164151854 - Field 2542794289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <target>Elsődleges kulcs</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Orders Setup - Field PKEY - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 164151854 - Field 4291429487 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted No. Series</source>
+          <target>Könyvelt sorszám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Nutrition Orders Setup - Field Posted No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition Order</source>
+          <target>Könyvelt táplálkozás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <target>Vevő neve</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Vevő száma</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <target>Dátum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition No.</source>
+          <target>Szám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 2508615589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Carbohydrates</source>
+          <target>Összes szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 1074868379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Fat</source>
+          <target>Összes zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 3317566697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Kcal</source>
+          <target>Összes kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 2737970965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total KJ</source>
+          <target>Összes KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 718806730 - Field 3014316771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Protein</source>
+          <target>Összes fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Protein - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition</source>
+          <target>Könyvelt táplálkozás összetevők</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 837068723 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Carbohydrates</source>
+          <target>Szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <target>Kód</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Leírás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 1575806285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fat</source>
+          <target>Zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2799087047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kcal</source>
+          <target>Kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2526689939 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>KJ</source>
+          <target>KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <target>Sorszám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition No.</source>
+          <target>Szám</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2979945781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Protein</source>
+          <target>Fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Protein - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <target>Mennyiség</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 1405426649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of measure</source>
+          <target>Mértékegység</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Unit of measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 583157483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Macronutrient</source>
+          <target>Összetevő</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Macronutrient - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4271160630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Macronutrients</source>
+          <target>Makrótápanyagok</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Macronutrients - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Order</source>
+          <target>Táplálkozás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - NamedType 3552134541" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nincs implementálva %1</source>
+          <target>Nincs implementálva %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - NamedType NotImplementedError</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 3451315107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export</source>
+          <target>Táplálkozás exportálása</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action ExportOrders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 2172547201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post</source>
+          <target>Könyvelés</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action PostDocument - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 4032263875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Release</source>
+          <target>Táplálkozás lezárása</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Release - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 2071937805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reopen</source>
+          <target>Táplálkozás újranyitása</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Reopen - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1695615291 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Order Setup</source>
+          <target>Táplálkozás beállítás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2255561887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Orders</source>
+          <target>Táplálkozások</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2699322683 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutritions</source>
+          <target>Táplálkozás összetevők</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page NutritionOrderSubpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1463006313 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition Order</source>
+          <target>Könyvelt táplálkozás</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1988035956 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition</source>
+          <target>Könyvelt táplálkozás összetevő</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Order Subpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2251999296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition Orders</source>
+          <target>Könyvelt táplálkozások</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1038950918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Nutrition Order</source>
+          <target>Táplálkozás exportálása</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Export Nutrition Order - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

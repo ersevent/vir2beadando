@@ -1,19 +1,19 @@
 table 50201 "Nutrition Header"
 {
-    Caption = 'Táplálkozás';
+    Caption = 'Nutrition Order';
     DataClassification = ToBeClassified;
     
     fields
     {
         field(1; "No."; Code[10])
         {
-            Caption = 'Táplálkozási szám';
+            Caption = 'Nutrition No.';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(2; "Customer No."; Code[20])
         {
-            Caption = 'Vevő száma';
+            Caption = 'Customer No.';
             DataClassification = CustomerContent;
             TableRelation = Customer."No.";
             
@@ -29,24 +29,24 @@ table 50201 "Nutrition Header"
         }
         field(3; "Customer Name"; Text[20])
         {
-            Caption = 'Vevő neve';
+            Caption = 'Customer Name';
             DataClassification = CustomerContent;
         }
         field(4; "Date"; Date)
         {
-            Caption = 'Dátum';
+            Caption = 'Date';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(5; Status; enum "Sales Document Status")
         {
-            Caption = 'Státusz';
+            Caption = 'Status';
             ValuesAllowed = 0, 1;
             DataClassification = CustomerContent;
         }
         field(6; "Delete after post"; Boolean)
         {
-            Caption = 'Törlés könyvelés után';
+            Caption = 'Delete after post';
             DataClassification = CustomerContent;
         }        
     }

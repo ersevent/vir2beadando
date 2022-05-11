@@ -1,7 +1,7 @@
 page 50203 "Macronutrients"
 {
     ApplicationArea = All;
-    Caption = 'Összetevők';
+    Caption = 'Macronutrients';
     PageType = List;
     SourceTable = Macronutrients;
     UsageCategory = Lists;

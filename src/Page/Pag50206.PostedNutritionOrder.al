@@ -1,6 +1,6 @@
 page 50206 "Posted Nutrition Order"
 {
-    Caption = 'Könyvelt táplálkozás';
+    Caption = 'Posted Nutrition Order';
     PageType = Document;
     SourceTable = "Posted Nutrition Header";
     Editable = false;

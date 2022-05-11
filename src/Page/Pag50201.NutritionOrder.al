@@ -1,6 +1,6 @@
 page 50201 "Nutrition Order"
 {
-    Caption = 'Táplálkozás';
+    Caption = 'Nutrition Order';
     PageType = Document;
     SourceTable = "Nutrition Header";
     
@@ -48,7 +48,7 @@ page 50201 "Nutrition Order"
         {
             action(Release)
             {
-                Caption = 'Táplálkozás lezárása';
+                Caption = 'Release';
                 Image = Stages;
                 ApplicationArea = All;
                 Promoted = true;        //főtáblán is jelenjen meg
@@ -62,7 +62,7 @@ page 50201 "Nutrition Order"
             }
             action(Reopen)
             {
-                Caption = 'Táplálkozás újranyitása';
+                Caption = 'Reopen';
                 Image = Stages;
                 ApplicationArea = All;
                 Promoted = true;        //főtáblán is jelenjen meg
@@ -75,7 +75,7 @@ page 50201 "Nutrition Order"
             }
             action(PostDocument)
             {
-                Caption = 'Könyvelés';
+                Caption = 'Post';
                 Image = Stages;
                 ApplicationArea = All;
                 Promoted = true;        //főtáblán is jelenjen meg
@@ -89,7 +89,7 @@ page 50201 "Nutrition Order"
             }
             action(ExportOrders)
             {
-                Caption = 'Táplálkozás exportálása';
+                Caption = 'Export';
                 Image = Export;
                 ApplicationArea = All;
                 Promoted = true;        //főtáblán is jelenjen meg

@@ -1,7 +1,7 @@
 page 50202 "Nutrition Orders"
 {
     ApplicationArea = All;
-    Caption = 'Táplálkozások';
+    Caption = 'Nutrition Orders';
     PageType = List;
     SourceTable = "Nutrition Header";
     UsageCategory = Lists;

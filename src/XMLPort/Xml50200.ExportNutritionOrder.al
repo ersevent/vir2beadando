@@ -1,6 +1,6 @@
 xmlport 50200 "Export Nutrition Order"
 {
-    Caption = 'Táplálkozás exportálása';
+    Caption = 'Export Nutrition Order';
     Format = Xml;
     Direction = Export;
 /*  

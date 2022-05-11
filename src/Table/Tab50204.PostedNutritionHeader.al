@@ -1,57 +1,57 @@
 table 50204 "Posted Nutrition Header"
 {
-    Caption = 'Könyvelt táplálkozás';
+    Caption = 'Posted Nutrition Order';
     DataClassification = ToBeClassified;
     
     fields
     {
         field(1; "No."; Code[20])
         {
-            Caption = 'Szám';
+            Caption = 'Nutrition No.';
             DataClassification = CustomerContent;
         }
         field(2; "Customer No."; Code[20])
         {
-            Caption = 'Vevő száma';
+            Caption = 'Customer No.';
             DataClassification = CustomerContent;
         }
         field(3; "Customer Name"; Text[100])
         {
-            Caption = 'Vevő neve';
+            Caption = 'Customer Name';
             DataClassification = CustomerContent;
         }
         field(4; "Date"; Date)
         {
-            Caption = 'Dátum';
+            Caption = 'Date';
             DataClassification = CustomerContent;
         }
         field(7; "Total Protein"; Integer)
         {
-            Caption = 'Összes fehérje';
+            Caption = 'Total Protein';
             FieldClass = FlowField;
             CalcFormula = sum("Posted Nutrition Line".Protein where("No." = field("No.")));
         }
         field(8; "Total Fat"; Integer)
         {
-            Caption = 'Összes zsír';
+            Caption = 'Total Fat';
             FieldClass = FlowField;
             CalcFormula = sum("Posted Nutrition Line".Fat where("No." = field("No.")));
         }
         field(9; "Total Carbohydrates"; Integer)
         {
-            Caption = 'Összes szénhidrát';
+            Caption = 'Total Carbohydrates';
             FieldClass = FlowField;
             CalcFormula = sum("Posted Nutrition Line".Carbohydrates where("No." = field("No.")));
         }
         field(10; "Total KJ"; Integer)
         {
-            Caption = 'Összes KJ';
+            Caption = 'Total KJ';
             FieldClass = FlowField;
             CalcFormula = sum("Posted Nutrition Line".KJ where("No." = field("No.")));
         }
         field(11; "Total Kcal"; Integer)
         {
-            Caption = 'Összes kalória';
+            Caption = 'Total Kcal';
             FieldClass = FlowField;
             CalcFormula = sum("Posted Nutrition Line".Kcal where("No." = field("No.")));
         }

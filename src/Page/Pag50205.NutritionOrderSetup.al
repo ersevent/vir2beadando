@@ -1,6 +1,6 @@
 page 50205 "Nutrition Order Setup"
 {
-    Caption = 'Táplálkozás beállítás';
+    Caption = 'Nutrition Order Setup';
     PageType = Card;
     SourceTable = "Nutrition Orders Setup";
     UsageCategory = Administration;

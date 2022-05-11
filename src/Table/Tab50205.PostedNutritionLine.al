@@ -1,53 +1,53 @@
 table 50205 "Posted Nutrition Line"
 {
-    Caption = 'Könyvelt táplálkozás összetevők';
+    Caption = 'Posted Nutrition';
     DataClassification = ToBeClassified;
     
     fields
     {
         field(1; "No."; Code[20])
         {
-            Caption = 'Szám';
+            Caption = 'Nutrition No.';
             DataClassification = CustomerContent;
         }
         field(2; "Line No."; Integer)
         {
-            Caption = 'Sorszám';
+            Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
         field(3; "Code"; Code[20])
         {
-            Caption = 'Kód';
+            Caption = 'Code';
             DataClassification = CustomerContent;
         }
         field(4; Description; Text[100])
         {
-            Caption = 'Leírás';
+            Caption = 'Description';
             DataClassification = CustomerContent;
         }
         field(5; Quantity; Integer)
         {
-            Caption = 'Mennyiség';
+            Caption = 'Quantity';
             DataClassification = CustomerContent;
         }
         field(6; Protein; Integer)
         {
-            Caption = 'Fehérje';
+            Caption = 'Protein';
             DataClassification = CustomerContent;
         }
         field(7; Fat; Integer)
         {
-            Caption = 'Zsír';
+            Caption = 'Fat';
             DataClassification = CustomerContent;
         }
         field(8; Carbohydrates; Integer)
         {
-            Caption = 'Szénhidrát';
+            Caption = 'Carbohydrates';
             DataClassification = CustomerContent;
         }
         field(9; "Unit of measure"; Code[10])
         {
-            Caption = 'Mértékegység';
+            Caption = 'Unit of measure';
             DataClassification = CustomerContent;
         }
         field(10; KJ; Integer)
@@ -57,7 +57,7 @@ table 50205 "Posted Nutrition Line"
         }
         field(11; Kcal; Integer)
         {
-            Caption = 'Kalória';
+            Caption = 'Kcal';
             DataClassification = CustomerContent;
         }
     }

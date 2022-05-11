@@ -1,6 +1,6 @@
 table 50202 Macronutrients
 {
-    Caption = 'Összetevők';
+    Caption = 'Macronutrients';
     DataClassification = ToBeClassified;
 
     LookupPageId = Macronutrients;
@@ -10,32 +10,32 @@ table 50202 Macronutrients
     {
         field(1; "Code"; Code[10])
         {
-            Caption = 'Kód';
+            Caption = 'Code';
             DataClassification = CustomerContent;
         }
         field(2; Description; Text[20])
         {
-            Caption = 'Leírás';
+            Caption = 'Description';
             DataClassification = CustomerContent;
         }
         field(3; Protein; Integer)
         {
-            Caption = 'Fehérje';
+            Caption = 'Protein';
             DataClassification = CustomerContent;
         }
         field(4; Fat; Integer)
         {
-            Caption = 'Zsír';
+            Caption = 'Fat';
             DataClassification = CustomerContent;
         }
         field(5; Carbohydrates; Integer)
         {
-            Caption = 'Szénhidrát';
+            Caption = 'Carbohydrates';
             DataClassification = CustomerContent;
         }
         field(6; "Unit of measure"; Code[10])
         {
-            Caption = 'Mértékegység';
+            Caption = 'Unit of measure';
             DataClassification = CustomerContent;
             TableRelation = "Unit of Measure";
         }
@@ -46,7 +46,7 @@ table 50202 Macronutrients
         }
         field(8; Kcal; Integer)
         {
-            Caption = 'Kalória';
+            Caption = 'Kcal';
             DataClassification = CustomerContent;
         }
     }

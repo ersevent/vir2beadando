@@ -1,6 +1,6 @@
 page 50207 "Posted Nutrition Order Subpage"
 {
-    Caption = 'Könyvelt táplálkozás összetevő';
+    Caption = 'Posted Nutrition';
     PageType = ListPart;
     SourceTable = "Posted Nutrition Line";
     Editable = false;

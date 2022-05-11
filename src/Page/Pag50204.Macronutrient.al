@@ -1,6 +1,6 @@
 page 50204 Macronutrient
 {
-    Caption = 'Összetevő';
+    Caption = 'Macronutrient';
     PageType = Document;
     SourceTable = Macronutrients;
     

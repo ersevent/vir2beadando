@@ -1,6 +1,6 @@
 page 50200 NutritionOrderSubpage
 {
-    Caption = 'Táplálkozás összetevők';
+    Caption = 'Nutritions';
     PageType = ListPart;
     SourceTable = "Nutrition Line";
     AutoSplitKey = true;

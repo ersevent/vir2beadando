@@ -1,6 +1,6 @@
 table 50200 "Nutrition Line"
 {
-    Caption = 'Táplálkozás összetevők';
+    Caption = 'Nutritions';
     DataClassification = ToBeClassified;
     LookupPageId = NutritionOrderSubpage;
     DrillDownPageId = NutritionOrderSubpage;
@@ -9,18 +9,18 @@ table 50200 "Nutrition Line"
     {
         field(1; "No."; Code[20])
         {
-            Caption = 'Táplálkozás szám';
+            Caption = 'Nutrition No.';
             DataClassification = CustomerContent;
             TableRelation = "Nutrition Header"."No.";
         }
         field(2; "Line No."; Integer)
         {
-            Caption = 'Sorszám';
+            Caption = 'Line No.';
             DataClassification = CustomerContent;
         }
         field(3; "Code"; Code[20])
         {
-            Caption = 'Kód';
+            Caption = 'Code';
             DataClassification = CustomerContent;
             TableRelation = Macronutrients."Code";
 
@@ -42,14 +42,14 @@ table 50200 "Nutrition Line"
         }
         field(4; Description; Text[100])
         {
-            Caption = 'Leírás';
+            Caption = 'Description';
             FieldClass = FlowField;
             CalcFormula = lookup(Macronutrients.Description where("Code" = field("Code")));     //keresek valamit
             Editable = false;   //flowfield mindig editable false
         }
         field(5; Quantity; Integer)
         {
-            Caption = 'Mennyiség';
+            Caption = 'Quantity';
             DataClassification = CustomerContent;
             InitValue = 1;
 
@@ -62,25 +62,25 @@ table 50200 "Nutrition Line"
         }
         field(6; Protein; Integer)
         {
-            Caption = 'Fehérje';
+            Caption = 'Protein';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(7; Fat; Integer)
         {
-            Caption = 'Zsír';
+            Caption = 'Fat';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(8; Carbohydrates; Integer)
         {
-            Caption = 'Szénhidrát';
+            Caption = 'Carbohydrates';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(9; "Unit of measure"; Code[10])
         {
-            Caption = 'Mértékegység';
+            Caption = 'Unit of measure';
             DataClassification = CustomerContent;
             Editable = false;
         }
@@ -92,37 +92,37 @@ table 50200 "Nutrition Line"
         }
         field(11; Kcal; Integer)
         {
-            Caption = 'Kalória';
+            Caption = 'Kcal';
             DataClassification = CustomerContent;
             Editable = false;
         }
         field(12; "Total Protein"; Integer)
         {
-            Caption = 'Összes fehérje';
+            Caption = 'Total Protein';
             FieldClass = FlowField;
             CalcFormula = sum("Nutrition Line".Protein where("No." = field("No.")));
         }
         field(13; "Total Fat"; Integer)
         {
-            Caption = 'Összes zsír';
+            Caption = 'Total Fat';
             FieldClass = FlowField;
             CalcFormula = sum("Nutrition Line".Fat where("No." = field("No.")));
         }
         field(14; "Total Carbohydrates"; Integer)
         {
-            Caption = 'Összes szénhidrát';
+            Caption = 'Total Carbohydrates';
             FieldClass = FlowField;
             CalcFormula = sum("Nutrition Line".Carbohydrates where("No." = field("No.")));
         }
         field(15; "Total KJ"; Integer)
         {
-            Caption = 'Összes KJ';
+            Caption = 'Total KJ';
             FieldClass = FlowField;
             CalcFormula = sum("Nutrition Line".KJ where("No." = field("No.")));
         }
         field(16; "Total Kcal"; Integer)
         {
-            Caption = 'Összes kalória';
+            Caption = 'Total Kcal';
             FieldClass = FlowField;
             CalcFormula = sum("Nutrition Line".Kcal where("No." = field("No.")));
         }
