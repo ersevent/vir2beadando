@@ -16,7 +16,7 @@ table 50201 "Nutrition Header"
             Caption = 'Customer No.';
             DataClassification = CustomerContent;
             TableRelation = Customer."No.";
-            
+
             trigger OnValidate()
             var
                 Customer: Record Customer;

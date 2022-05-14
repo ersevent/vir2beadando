@@ -98,7 +98,28 @@ page 50201 "Nutrition Order"
                 PromotedCategory = Report;
                 trigger OnAction()
                 begin
-                    Xmlport.Run(50200, true, false);
+                    CurrPage.SetSelectionFilter(Rec);
+                    Xmlport.Run(50200, false, false, Rec);
+                end;
+            }
+            action(Query)
+            {
+                Caption = 'Query';
+                Image = Export;
+                ApplicationArea = All;
+                Promoted = true;        //főtáblán is jelenjen meg
+                PromotedOnly = true;
+                PromotedIsBig = true;
+                PromotedCategory = Report;
+                trigger OnAction()
+                var
+                    MyQuery: Query "Nutrition Query";
+                    OutputText: Label 'Customer name = %1, Protein = %2';
+                begin
+                    MyQuery.Open;
+                    while MyQuery.Read do
+                        Message(OutputText, MyQuery.CustomerName, MyQuery.Protein);
+                    MyQuery.Close;  
                 end;
             }
         }
@@ -108,7 +129,6 @@ page 50201 "Nutrition Order"
     begin
         PageEditable := Rec.Status = Rec.Status::Open;      //page megnyitásánlá eldől hogy status az open vagy released
         CurrPage.Editable(PageEditable);
-        
     end;
 
     /* trigger OnAfterGetRecord()      //total kiszámitása miután a record kész van, flowfield helyett

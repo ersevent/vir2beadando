@@ -393,6 +393,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action PostDocument - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 1269526094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Query</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Query - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2869767122 - Action 1269526094 - Method 1377591017 - NamedType 3513340374" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer name = %1, Protein = %2</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Query - Method OnAction - NamedType OutputText</note>
+        </trans-unit>
         <trans-unit id="Page 2869767122 - Action 4032263875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Release</source>
           <target>Táplálkozás lezárása</target>
@@ -441,11 +455,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Orders - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2251999296 - Action 3240050342 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Report</source>
+          <target>Jelentés készítése</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Orders - Action Create Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1550855251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Nutrition Order Report</source>
+          <target>Könyvelt táplálkozások riport</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Posted Nutrition Order Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 3466771558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nutrition Query</source>
+          <target>Táplálkozás lekérdezése</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query Nutrition Query - Property Caption</note>
+        </trans-unit>
         <trans-unit id="XmlPort 1038950918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export Nutrition Order</source>
           <target>Táplálkozás exportálása</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort Export Nutrition Order - Property Caption</note>
         </trans-unit>
       </group>

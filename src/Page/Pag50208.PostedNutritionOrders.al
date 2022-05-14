@@ -52,4 +52,25 @@ page 50208 "Posted Nutrition Orders"
             }
         }
     }
+    actions
+    {
+        area(Processing)
+        {
+            action("Create Report")
+            {
+                Caption = 'Create Report';
+                Image = Report;
+                ApplicationArea = All;
+                Promoted = true;        //főtáblán is jelenjen meg
+                PromotedOnly = true;
+                PromotedIsBig = true;
+                PromotedCategory = Report;
+                trigger OnAction()
+                begin
+                    CurrPage.SetSelectionFilter(Rec);
+                    report.Run(Report::"Posted Nutrition Order Report", true, false, Rec);
+                end;
+            }
+        }
+    }
 }
