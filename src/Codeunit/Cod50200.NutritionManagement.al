@@ -50,7 +50,7 @@ codeunit 50200 "Nutrition Management"
         NutritionPostedHeader.TransferFields(NutritionHeader);
         NutritionOrderSetup.Get();
         NutritionPostedHeader."No." := NoManagement.GetNextNo(NutritionOrderSetup."Posted No. Series",WORKDATE,true);
-        NutritionPostedHeader.Insert(true);
+        NutritionPostedHeader.Insert();
 
         NutritionLine.Reset();
         NutritionLine.SetRange("No.", NutritionHeader."No.");
