@@ -89,7 +89,7 @@ page 50201 "Nutrition Order"
             }
             action(ExportOrders)
             {
-                Caption = 'Export';
+                Caption = 'Export XML';
                 Image = Export;
                 ApplicationArea = All;
                 Promoted = true;        //főtáblán is jelenjen meg

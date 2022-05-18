@@ -382,7 +382,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - NamedType NotImplementedError</note>
         </trans-unit>
         <trans-unit id="Page 2869767122 - Action 3451315107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Export</source>
+          <source>Export XML</source>
           <target>Táplálkozás exportálása</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action ExportOrders - Property Caption</note>
