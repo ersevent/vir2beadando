@@ -1169,6 +1169,9 @@ End Function
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
         <Field Name="CustomerNo">
           <DataField>CustomerNo</DataField>
         </Field>

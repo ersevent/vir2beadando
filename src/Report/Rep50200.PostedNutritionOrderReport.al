@@ -9,8 +9,11 @@ report 50200 "Posted Nutrition Order Report"
     {
         dataitem(PostedNutritionHeader; "Posted Nutrition Header")
         {
-            DataItemTableView = SORTING ("No.");
+            DataItemTableView = SORTING("No.");
             RequestFilterFields = "Customer Name", "Date";
+            column(No; "No.")
+            {
+            }
             column(CustomerNo; "Customer No.")
             {
             }
