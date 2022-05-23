@@ -1,6 +1,9 @@
 codeunit 50200 "Nutrition Management"
 {
-    procedure ChangeStatus(var NutritionHeader: Record "Nutrition Header";Status: Enum "Sales Document Status")
+    var
+        ErrorLbl: Label 'Error';
+
+    procedure ChangeStatus(var NutritionHeader: Record "Nutrition Header"; Status: Enum "Sales Document Status")
     //ha var ott van akkor referencia, ha nincs akkor csak lemásolja az értékeket
     begin
         NutritionHeader.TestField(NutritionHeader."Customer No.");
@@ -9,21 +12,24 @@ codeunit 50200 "Nutrition Management"
     end;
 
     procedure ConfirmChangeStatusToOpen(var Rec: Record "Nutrition Header")
+    var
+        StatusToOpenLbl: Label 'Would you like to reopen the nutrition order?';
     begin
-        if not Confirm('Szeretnéd újranyitni a táplálkozást?') then
-            Error('Hiba!');
+        if not Confirm(StatusToOpenLbl) then
+            Error(ErrorLbl);
     end;
 
     internal procedure ConfirmChangeStatusToRelease(var Rec: Record "Nutrition Header")
+    var
+        StatusToReleaseLbl: Label 'Would you like to release the nutrition order?';
     begin
-        if not Confirm('Szeretnéd lezárni a táplálkozást?') then
-            Error('Hiba!')
+        if not Confirm(StatusToReleaseLbl) then
+            Error(ErrorLbl)
     end;
 
     internal procedure CalcQuantity(var NutritionLine: Record "Nutrition Line"; recMacronutrients: Record Macronutrients)
     begin
-        if recMacronutrients.Get(NutritionLine."Code") then
-        begin
+        if recMacronutrients.Get(NutritionLine."Code") then begin
             NutritionLine.Protein := recMacronutrients.Protein * NutritionLine.Quantity;
             NutritionLine.Fat := recMacronutrients.Fat * NutritionLine.Quantity;
             NutritionLine.Carbohydrates := recMacronutrients.Carbohydrates * NutritionLine.Quantity;
@@ -31,25 +37,28 @@ codeunit 50200 "Nutrition Management"
             NutritionLine.KJ := recMacronutrients.KJ * NutritionLine.Quantity;
             NutritionLine.Kcal := recMacronutrients.Kcal * NutritionLine.Quantity;
             NutritionLine.Modify();
-        end;    
+        end;
     end;
+
     procedure PostNutritionOrder(var NutritionHeader: Record "Nutrition Header")
     var
         NutritionLine: Record "Nutrition Line";
         NutritionPostedHeader: Record "Posted Nutrition Header";
         NutritionPostedLine: Record "Posted Nutrition Line";
-        NutritionOrderSetup : Record "Nutrition Orders Setup";
-        NoManagement : Codeunit NoSeriesManagement;
+        NutritionOrderSetup: Record "Nutrition Orders Setup";
+        NoManagement: Codeunit NoSeriesManagement;
+        NutritionPostLbl: Label 'Would you like to post the nutrition order?';
+        NutritionPostDoneLbl: Label 'Successful posting';
     begin
         NutritionHeader.TestField(Status, NutritionHeader.Status::Released);
 
-        if not Confirm('Szeretnéd könyvelni a táplálkozást?') then
-            exit;
+        if not Confirm(NutritionPostLbl) then
+            Error(ErrorLbl);
 
         NutritionPostedHeader.Init();
         NutritionPostedHeader.TransferFields(NutritionHeader);
         NutritionOrderSetup.Get();
-        NutritionPostedHeader."No." := NoManagement.GetNextNo(NutritionOrderSetup."Posted No. Series",WORKDATE,true);
+        NutritionPostedHeader."No." := NoManagement.GetNextNo(NutritionOrderSetup."Posted No. Series", WORKDATE, true);
         NutritionPostedHeader.Insert();
 
         NutritionLine.Reset();
@@ -61,7 +70,7 @@ codeunit 50200 "Nutrition Management"
                 NutritionPostedLine."No." := NutritionPostedHeader."No.";
                 NutritionPostedLine.Insert(true);
             until NutritionLine.Next() = 0;
-        Message('Sikeres könyvelés!');
+        Message(NutritionPostDoneLbl);
         if NutritionHeader."Delete after post" then
             NutritionHeader.Delete(true);     //törli a rekordot a táblában
         //Page.RunModal(Page::"Nutrition Order", NutritionPostedHeader);

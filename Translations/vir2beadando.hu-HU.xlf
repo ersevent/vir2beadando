@@ -357,6 +357,41 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Unit of measure - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1032159517 - NamedType 3941846598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target>Hiba</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - NamedType ErrorLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1032159517 - Method 343887681 - NamedType 2725679851" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Would you like to reopen the nutrition order?</source>
+          <target>Szeretnéd újranyitni a rendelést?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - Method ConfirmChangeStatusToOpen - NamedType StatusToOpenLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1032159517 - Method 4142091790 - NamedType 714443032" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Would you like to release the nutrition order?</source>
+          <target>Szeretnéd lezárni a rendelést?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - Method ConfirmChangeStatusToRelease - NamedType StatusToReleaseLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1032159517 - Method 2792774474 - NamedType 2704091406" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Would you like to post the nutrition order?</source>
+          <target>Szeretnéd könyvelni a rendelést?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - Method PostNutritionOrder - NamedType NutritionPostLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1032159517 - Method 2792774474 - NamedType 4178782670" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Successful posting</source>
+          <target>Sikeres könyvelés</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - Method PostNutritionOrder - NamedType NutritionPostDoneLbl</note>
+        </trans-unit>
         <trans-unit id="Page 583157483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Macronutrient</source>
           <target>Összetevő</target>
@@ -395,14 +430,14 @@
         </trans-unit>
         <trans-unit id="Page 2869767122 - Action 1269526094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Query</source>
-          <target>[NAB: NOT TRANSLATED]</target>
+          <target>Lekérdezés</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Query - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2869767122 - Action 1269526094 - Method 1377591017 - NamedType 3513340374" size-unit="char" translate="yes" xml:space="preserve">
           <source>Customer name = %1, Protein = %2</source>
-          <target>[NAB: NOT TRANSLATED]</target>
+          <target>Vevő neve = %1, Fehérje = %2</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Action Query - Method OnAction - NamedType OutputText</note>
@@ -459,7 +494,6 @@
           <source>Create Report</source>
           <target>Jelentés készítése</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Posted Nutrition Orders - Action Create Report - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 1550855251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -472,7 +506,6 @@
           <source>Nutrition Query</source>
           <target>Táplálkozás lekérdezése</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Query Nutrition Query - Property Caption</note>
         </trans-unit>
         <trans-unit id="XmlPort 1038950918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">

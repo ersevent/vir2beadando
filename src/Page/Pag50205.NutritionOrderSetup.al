@@ -5,7 +5,7 @@ page 50205 "Nutrition Order Setup"
     SourceTable = "Nutrition Orders Setup";
     UsageCategory = Administration;
     ApplicationArea = all;
-    
+
     layout
     {
         area(content)
@@ -23,4 +23,13 @@ page 50205 "Nutrition Order Setup"
             }
         }
     }
+
+    trigger OnOpenPage()
+    begin
+        Rec.Reset();
+        if not Rec.Get() then begin
+            Rec.Init();
+            Rec.Insert();
+        end;
+    end;
 }
