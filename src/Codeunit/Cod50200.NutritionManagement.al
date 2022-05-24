@@ -40,6 +40,30 @@ codeunit 50200 "Nutrition Management"
         end;
     end;
 
+    internal procedure ConfirmExport(var Rec: Record "Nutrition Header")
+    var
+        ExportLbl: Label 'Would you like to export the nutrition order?';
+    begin
+        if not Confirm(ExportLbl) then
+            Error(ErrorLbl);
+    end;
+
+    internal procedure ConfirmPost(var Rec: Record "Nutrition Header")
+    var
+        PostLbl: Label 'Would you like to post the nutrition order?';
+    begin
+        if not Confirm(PostLbl) then
+            Error(ErrorLbl);
+    end;
+
+    internal procedure ConfirmQuery(var Rec: Record "Nutrition Header")
+    var
+        QueryLbl: Label 'Would you like to create a query?';
+    begin
+        if not Confirm(QueryLbl) then
+            Error(ErrorLbl);
+    end;
+
     procedure PostNutritionOrder(var NutritionHeader: Record "Nutrition Header")
     var
         NutritionLine: Record "Nutrition Line";
@@ -47,13 +71,9 @@ codeunit 50200 "Nutrition Management"
         NutritionPostedLine: Record "Posted Nutrition Line";
         NutritionOrderSetup: Record "Nutrition Orders Setup";
         NoManagement: Codeunit NoSeriesManagement;
-        NutritionPostLbl: Label 'Would you like to post the nutrition order?';
         NutritionPostDoneLbl: Label 'Successful posting';
     begin
         NutritionHeader.TestField(Status, NutritionHeader.Status::Released);
-
-        if not Confirm(NutritionPostLbl) then
-            Error(ErrorLbl);
 
         NutritionPostedHeader.Init();
         NutritionPostedHeader.TransferFields(NutritionHeader);
