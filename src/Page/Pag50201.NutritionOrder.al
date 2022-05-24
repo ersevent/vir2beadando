@@ -3,7 +3,7 @@ page 50201 "Nutrition Order"
     Caption = 'Nutrition Order';
     PageType = Document;
     SourceTable = "Nutrition Header";
-    
+
     layout
     {
         area(content)
@@ -43,7 +43,8 @@ page 50201 "Nutrition Order"
             }
         }
     }
-    actions{
+    actions
+    {
         area(Processing)
         {
             action(Release)
@@ -51,12 +52,11 @@ page 50201 "Nutrition Order"
                 Caption = 'Release';
                 Image = Stages;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 trigger OnAction()
                 begin
-                    //Message(NotImplementedError, UserId());
                     NutritionManagement.ChangeStatus(Rec, Rec.Status::Released);
                 end;
             }
@@ -65,7 +65,7 @@ page 50201 "Nutrition Order"
                 Caption = 'Reopen';
                 Image = Stages;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 trigger OnAction()
@@ -78,7 +78,7 @@ page 50201 "Nutrition Order"
                 Caption = 'Post';
                 Image = Stages;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 PromotedCategory = Process;
@@ -92,7 +92,7 @@ page 50201 "Nutrition Order"
                 Caption = 'Export XML';
                 Image = Export;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 PromotedCategory = Report;
@@ -107,7 +107,7 @@ page 50201 "Nutrition Order"
                 Caption = 'Query';
                 Image = Export;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 PromotedCategory = Report;
@@ -119,12 +119,12 @@ page 50201 "Nutrition Order"
                     MyQuery.Open;
                     while MyQuery.Read do
                         Message(OutputText, MyQuery.CustomerName, MyQuery.Protein);
-                    MyQuery.Close;  
+                    MyQuery.Close;
                 end;
             }
         }
     }
-    
+
     trigger OnOpenPage()
     begin
         PageEditable := Rec.Status = Rec.Status::Open;      //page megnyitásánlá eldől hogy status az open vagy released
@@ -162,9 +162,8 @@ page 50201 "Nutrition Order"
         Rec."Total KJ" := tempKJ;
         Rec."Total Kcal" := tempKcal;
     end; */
-    
+
     var
         PageEditable: Boolean;
-        NotImplementedError: Label 'Nincs implementálva %1';
         NutritionManagement: Codeunit "Nutrition Management";
 }

@@ -3,10 +3,10 @@ xmlport 50200 "Export Nutrition Order"
     Caption = 'Export Nutrition Order';
     Format = Xml;
     Direction = Export;
-/*  
-    Format = VariableText;
-    TextEncoding = UTF8;
-    TableSeparator = '<NewLine>'; */
+    /*  
+        Format = VariableText;
+        TextEncoding = UTF8;
+        TableSeparator = '<NewLine>'; */
 
     schema
     {

@@ -6,7 +6,7 @@ page 50208 "Posted Nutrition Orders"
     SourceTable = "Posted Nutrition Header";
     UsageCategory = History;
     CardPageId = "Posted Nutrition Order";
-    
+
     layout
     {
         area(content)
@@ -61,7 +61,7 @@ page 50208 "Posted Nutrition Orders"
                 Caption = 'Create Report';
                 Image = Report;
                 ApplicationArea = All;
-                Promoted = true;        //főtáblán is jelenjen meg
+                Promoted = true;
                 PromotedOnly = true;
                 PromotedIsBig = true;
                 PromotedCategory = Report;

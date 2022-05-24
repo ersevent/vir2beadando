@@ -28,15 +28,14 @@ table 50200 "Nutrition Line"
             var
                 recMacronutrients: Record Macronutrients;
             begin
-                if recMacronutrients.Get(Rec."Code") then
-                    begin
-                        Rec.Protein := recMacronutrients.Protein;
-                        Rec.Fat := recMacronutrients.Fat;
-                        Rec.Carbohydrates := recMacronutrients.Carbohydrates;
-                        Rec."Unit of measure" := recMacronutrients."Unit of measure";
-                        Rec.KJ := recMacronutrients.KJ;
-                        Rec.Kcal := recMacronutrients.Kcal;
-                    end;
+                if recMacronutrients.Get(Rec."Code") then begin
+                    Rec.Protein := recMacronutrients.Protein;
+                    Rec.Fat := recMacronutrients.Fat;
+                    Rec.Carbohydrates := recMacronutrients.Carbohydrates;
+                    Rec."Unit of measure" := recMacronutrients."Unit of measure";
+                    Rec.KJ := recMacronutrients.KJ;
+                    Rec.Kcal := recMacronutrients.Kcal;
+                end;
                 Rec.CalcFields(Description);
             end;
         }
@@ -44,7 +43,7 @@ table 50200 "Nutrition Line"
         {
             Caption = 'Description';
             FieldClass = FlowField;
-            CalcFormula = lookup(Macronutrients.Description where("Code" = field("Code")));     //keresek valamit
+            CalcFormula = lookup(Macronutrients.Description where("Code" = field("Code")));
             Editable = false;   //flowfield mindig editable false
         }
         field(5; Quantity; Integer)
@@ -86,7 +85,7 @@ table 50200 "Nutrition Line"
         }
         field(10; KJ; Integer)
         {
-            Caption = 'KJ'; 
+            Caption = 'KJ';
             DataClassification = CustomerContent;
             Editable = false;
         }

@@ -391,7 +391,6 @@
           <source>Would you like to create a query?</source>
           <target>Szeretnéd elkészíteni a lekérdezést?</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Nutrition Management - Method ConfirmQuery - NamedType QueryLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 1032159517 - Method 2792774474 - NamedType 4178782670" size-unit="char" translate="yes" xml:space="preserve">
@@ -417,12 +416,6 @@
           <target>Táplálkozás</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2869767122 - NamedType 3552134541" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nincs implementálva %1</source>
-          <target>Nincs implementálva %1</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Nutrition Order - NamedType NotImplementedError</note>
         </trans-unit>
         <trans-unit id="Page 2869767122 - Action 3451315107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export XML</source>
