@@ -58,6 +58,9 @@ page 50201 "Nutrition Order"
                 trigger OnAction()
                 begin
                     NutritionManagement.ChangeStatus(Rec, Rec.Status::Released);
+                    NutritionOrder.SetRecord(Rec);
+                    CurrPage.Close();
+                    NutritionOrder.Run();
                 end;
             }
             action(Reopen)
@@ -71,6 +74,9 @@ page 50201 "Nutrition Order"
                 trigger OnAction()
                 begin
                     NutritionManagement.ChangeStatus(Rec, Rec.Status::Open);
+                    NutritionOrder.SetRecord(Rec);
+                    CurrPage.Close();
+                    NutritionOrder.Run();
                 end;
             }
             action(PostDocument)
@@ -165,5 +171,6 @@ page 50201 "Nutrition Order"
 
     var
         PageEditable: Boolean;
+        NutritionOrder: Page "Nutrition Order";
         NutritionManagement: Codeunit "Nutrition Management";
 }
