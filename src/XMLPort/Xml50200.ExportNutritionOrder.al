@@ -28,19 +28,19 @@ xmlport 50200 "Export Nutrition Order"
                     LinkTable = NutritionHeader;
                     LinkFields = "No." = field("No.");
 
-                    fieldelement(TotalProtein; NutritionLine."Total Protein")
+                    fieldelement(Protein; NutritionLine.Protein)
                     {
                     }
-                    fieldelement(TotalFat; NutritionLine."Total Fat")
+                    fieldelement(Fat; NutritionLine."Fat")
                     {
                     }
-                    fieldelement(TotalCarbohydrates; NutritionLine."Total Carbohydrates")
+                    fieldelement(Carbohydrates; NutritionLine."Carbohydrates")
                     {
                     }
-                    fieldelement(TotalKJ; NutritionLine."Total KJ")
+                    fieldelement(KJ; NutritionLine."KJ")
                     {
                     }
-                    fieldelement(TotalKcal; NutritionLine."Total Kcal")
+                    fieldelement(Kcal; NutritionLine."Kcal")
                     {
                     }
                 }

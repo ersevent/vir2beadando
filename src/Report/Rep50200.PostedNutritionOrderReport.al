@@ -28,19 +28,19 @@ report 50200 "Posted Nutrition Order Report"
                 DataItemLinkReference = PostedNutritionHeader;
                 DataItemLink = "No." = field("No.");
 
-                column(TotalProtein; "Total Protein")
+                column(Protein; "Protein")
                 {
                 }
-                column(TotalFat; "Total Fat")
+                column(Fat; "Fat")
                 {
                 }
-                column(TotalCarbohydrates; "Total Carbohydrates")
+                column(Carbohydrates; "Carbohydrates")
                 {
                 }
-                column(TotalKJ; "Total KJ")
+                column(KJ; "KJ")
                 {
                 }
-                column(TotalKcal; "Total Kcal")
+                column(Kcal; "Kcal")
                 {
                 }
             }
