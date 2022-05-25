@@ -93,6 +93,8 @@ codeunit 50200 "Nutrition Management"
         Message(NutritionPostDoneLbl);
         if NutritionHeader."Delete after post" then
             NutritionHeader.Delete();     //törli a rekordot a táblában
+            //TODO linet is kell
+            //headerben ondelete
         Page.Run(Page::"Posted Nutrition Order", NutritionPostedHeader);
     end;
 }
