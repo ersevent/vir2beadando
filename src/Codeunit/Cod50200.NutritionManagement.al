@@ -88,11 +88,11 @@ codeunit 50200 "Nutrition Management"
                 NutritionPostedLine.Init();
                 NutritionPostedLine.TransferFields(NutritionLine);
                 NutritionPostedLine."No." := NutritionPostedHeader."No.";
-                NutritionPostedLine.Insert(true);
+                NutritionPostedLine.Insert();
             until NutritionLine.Next() = 0;
         Message(NutritionPostDoneLbl);
         if NutritionHeader."Delete after post" then
-            NutritionHeader.Delete(true);     //törli a rekordot a táblában
+            NutritionHeader.Delete();     //törli a rekordot a táblában
         Page.Run(Page::"Posted Nutrition Order", NutritionPostedHeader);
     end;
 }
