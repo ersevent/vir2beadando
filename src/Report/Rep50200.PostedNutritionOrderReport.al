@@ -23,20 +23,26 @@ report 50200 "Posted Nutrition Order Report"
             column(Date; "Date")
             {
             }
-            column(TotalProtein; "Total Protein")
+            dataitem("PostedNutritionLine";"Posted Nutrition Line")
             {
-            }
-            column(TotalFat; "Total Fat")
-            {
-            }
-            column(TotalCarbohydrates; "Total Carbohydrates")
-            {
-            }
-            column(TotalKJ; "Total KJ")
-            {
-            }
-            column(TotalKcal; "Total Kcal")
-            {
+                DataItemLinkReference = PostedNutritionHeader;
+                DataItemLink = "No." = field("No.");
+
+                column(TotalProtein; "Total Protein")
+                {
+                }
+                column(TotalFat; "Total Fat")
+                {
+                }
+                column(TotalCarbohydrates; "Total Carbohydrates")
+                {
+                }
+                column(TotalKJ; "Total KJ")
+                {
+                }
+                column(TotalKcal; "Total Kcal")
+                {
+                }
             }
         }
     }

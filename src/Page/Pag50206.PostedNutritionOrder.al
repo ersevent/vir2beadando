@@ -27,26 +27,6 @@ page 50206 "Posted Nutrition Order"
                 {
                     ApplicationArea = All;
                 }
-                field("Total Protein"; Rec."Total Protein")
-                {
-                    ApplicationArea = All;
-                }
-                field("Total Fat"; Rec."Total Fat")
-                {
-                    ApplicationArea = All;
-                }
-                field("Total Carbohydrates"; Rec."Total Carbohydrates")
-                {
-                    ApplicationArea = All;
-                }
-                field("Total KJ"; Rec."Total KJ")
-                {
-                    ApplicationArea = All;
-                }
-                field("Total Kcal"; Rec."Total Kcal")
-                {
-                    ApplicationArea = All;
-                }
             }
             part(PostedNutrionLine;"Posted Nutrition Order Subpage")
             {

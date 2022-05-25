@@ -60,6 +60,36 @@ table 50205 "Posted Nutrition Line"
             Caption = 'Kcal';
             DataClassification = CustomerContent;
         }
+        field(12; "Total Protein"; Integer)
+        {
+            Caption = 'Total Protein';
+            FieldClass = FlowField;
+            CalcFormula = sum("Posted Nutrition Line".Protein where("No." = field("No.")));
+        }
+        field(13; "Total Fat"; Integer)
+        {
+            Caption = 'Total Fat';
+            FieldClass = FlowField;
+            CalcFormula = sum("Posted Nutrition Line".Fat where("No." = field("No.")));
+        }
+        field(14; "Total Carbohydrates"; Integer)
+        {
+            Caption = 'Total Carbohydrates';
+            FieldClass = FlowField;
+            CalcFormula = sum("Posted Nutrition Line".Carbohydrates where("No." = field("No.")));
+        }
+        field(15; "Total KJ"; Integer)
+        {
+            Caption = 'Total KJ';
+            FieldClass = FlowField;
+            CalcFormula = sum("Posted Nutrition Line".KJ where("No." = field("No.")));
+        }
+        field(16; "Total Kcal"; Integer)
+        {
+            Caption = 'Total Kcal';
+            FieldClass = FlowField;
+            CalcFormula = sum("Posted Nutrition Line".Kcal where("No." = field("No.")));
+        }
     }
     keys
     {

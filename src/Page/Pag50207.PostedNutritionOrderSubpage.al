@@ -49,6 +49,29 @@ page 50207 "Posted Nutrition Order Subpage"
                     ApplicationArea = All;
                 }
             }
+            group(Total)
+            {
+                field("Total Protein"; Rec."Total Protein")
+                {
+                    ApplicationArea = All;
+                }
+                field("Total Fat"; Rec."Total Fat")
+                {
+                    ApplicationArea = All;
+                }
+                field("Total Carbohydrates"; Rec."Total Carbohydrates")
+                {
+                    ApplicationArea = All;
+                }
+                field("Total KJ"; Rec."Total KJ")
+                {
+                    ApplicationArea = All;
+                }
+                field("Total Kcal"; Rec."Total Kcal")
+                {
+                    ApplicationArea = All;
+                }
+            }
         }
     }
 }
