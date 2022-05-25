@@ -255,36 +255,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 718806730 - Field 2508615589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Carbohydrates</source>
-          <target>Összes szénhidrát</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Carbohydrates - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 718806730 - Field 1074868379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Fat</source>
-          <target>Összes zsír</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Fat - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 718806730 - Field 3317566697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Kcal</source>
-          <target>Összes kalória</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Kcal - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 718806730 - Field 2737970965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total KJ</source>
-          <target>Összes KJ</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total KJ - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 718806730 - Field 3014316771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Protein</source>
-          <target>Összes fehérje</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Header - Field Total Protein - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 4247721809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Posted Nutrition</source>
           <target>Könyvelt táplálkozás összetevők</target>
@@ -350,6 +320,41 @@
           <target>Mennyiség</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2508615589 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Carbohydrates</source>
+          <target>Összes szénhidrát</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Total Carbohydrates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 1074868379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Fat</source>
+          <target>Összes zsír</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Total Fat - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 3317566697 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Kcal</source>
+          <target>Összes kalória</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Total Kcal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 2737970965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total KJ</source>
+          <target>Összes KJ</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Total KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4247721809 - Field 3014316771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Protein</source>
+          <target>Összes fehérje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Nutrition Line - Field Total Protein - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4247721809 - Field 1405426649 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit of measure</source>
