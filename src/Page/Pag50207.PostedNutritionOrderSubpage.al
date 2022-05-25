@@ -4,7 +4,6 @@ page 50207 "Posted Nutrition Order Subpage"
     PageType = ListPart;
     SourceTable = "Posted Nutrition Line";
     Editable = false;
-    CardPageId = "Posted Nutrition Order";
     
     layout
     {

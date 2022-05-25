@@ -19,11 +19,18 @@ table 50205 "Posted Nutrition Line"
         {
             Caption = 'Code';
             DataClassification = CustomerContent;
+            trigger OnValidate()
+            var
+                recMacronutrients: Record Macronutrients;
+            begin
+                Rec.CalcFields(Description);
+            end;
         }
         field(4; Description; Text[100])
         {
             Caption = 'Description';
-            DataClassification = CustomerContent;
+            FieldClass = FlowField;
+            CalcFormula = lookup(Macronutrients.Description where("Code" = field("Code")));
         }
         field(5; Quantity; Integer)
         {
